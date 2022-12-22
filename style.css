@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+:root{
+    --1: #b41111;
+    --2: #000000;
+    --3: #5811b4;
+    --4: #bbb9aa;
+    --5: #ffffff;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.login-card-header h1{
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login-card-container{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    height: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.login-card-container .input{
+    position: relative;
+    width: 350px;
+    padding: 10px;
+}
+
+.input span{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    background: var(--5);
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.555);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.input input{
+    height: 50px;
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    outline: none;
+    border-radius: 5px;
+   background: none;
+    padding: 1rem 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* .login-card-container::before{
+    position: absolute;
+    content: '';
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    top: -50px;
+    right: -50px;
+    height: 100px;
+    width: 100px;
+    transition: .3s ease;
+}
+
+.login-card-container::after{
+    position: absolute;
+    content: '';
+    background: var(--2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    bottom: -50px;
+    left: -50px;
+    height: 100px;
+    width: 100px;
+    transition: .3s ease;
+}
+.login-card-container:hover::before{
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    right: -25px;
+    background: var(--2);
+}
+
+.login-card-container:hover::after{
+    width: 50px;
+    height: 50px;
+    bottom: -25px;
+   left: -25px;
+    background: var(--5);
+} */
+
+.login-card-container button{
+    width: 97%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: var(--3);
+    border-radius: 5px;
+    color: var(--5);
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+.login-card-container button:hover{
+    background: var(--2);
+}
+.other{
+    margin-bottom: 20px;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--3);
+    color: var(--5);
+    height: 70px;
+}
+.navigation nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.navigation nav ul li{
+    list-style: none;
+    text-transform: capitalize;
+    
+}
+.navigation img{
+    width: 70px;
+}
+.navigation nav ul li a{
+    color: var(--5);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 20px;
+}
+
+.header-pic img{
+    width: 600px;
+    top: 0;
+    left: -150px;
+    position: absolute;
+}
+
+.header-pic{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+}
+
+.header-info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--3);
+}
+
+.header-info h3{
+    text-transform: capitalize;
+}
+.header-info h1{
+    text-transform: uppercase;
+    color: var(--2);
+    position: relative;
+    margin-bottom: 20px;
+}
+.header-info h1::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    bottom: -5px;
+    left: 0;
+    background: var(--2);
+}
+
+.header-info button{
+    background: var(--3);
+    color: var(--5);
+    height: 30px;
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: .3s ease;
+}
+.header-info button:hover{
+    background: var(--2);
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
+    margin-left: 40%;
+    border-radius: 20px;
+   
+}
+.top{
+    min-height: 100vh;
+}
+.social-media a{
+    text-decoration: none;
+    color: var(--2);
+    
+}
+.social-media img{
+    width: 20px;
+    margin: 20px 20px;
+    transition: .5s ease;
+}
+
+.link{
+    overflow: hidden;
+    position: relative;
+}
+.link span{
+    position: absolute;
+}
+.social-media img:hover{
+    transform: translateY(-5px);
+   
+}
